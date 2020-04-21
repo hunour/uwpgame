@@ -1,0 +1,202 @@
+﻿
+using Microsoft.Graphics.Canvas;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Windows.UI;
+
+namespace breakouts1
+{
+    public class Pong
+    {
+        private blocksets blocks;
+        private Ball ball;
+        private Rectangle leftWall;
+        private Rectangle rightWall;
+        private Rectangle topWall;
+        private Rectangle userPaddle;
+        private Rectangle userPaddle2;
+        private const int NBR = 1000;
+        private const int NBC = 1000;
+        private blocksets[,] blockset = new blocksets[NBR, NBC];
+
+        public bool gameOver { get; private set; }
+        //clean this put it in a class where it belongs
+        private bool IsUPM_L;
+        private bool IsUPM_R;
+        public Pong()
+        {
+            gameOver = false;
+            ball = new Ball
+            {
+                X = 400,
+                Y = 730,
+                Radius = 5,
+                color = Colors.Gold,
+                M_L = Convert.ToBoolean(new Random().Next(1000)),
+                M_D = Convert.ToBoolean(false),
+                ballSpeed = 2
+            };
+            IsUPM_L = false;
+            IsUPM_R = false;
+            leftWall = new Rectangle
+            {
+                X = 10,
+                Y = 50,
+                width = 10,
+                Height = 700,
+                color = Colors.Green
+            };
+            rightWall = new Rectangle
+            {
+                X = 790,
+                Y = 50,
+                width = 10,
+                Height = 700,
+                color = Colors.Green
+            };
+            topWall = new Rectangle
+            {
+                X = 10,
+                Y = 50,
+                width = 780,
+                Height = 10,
+                color = Colors.Green
+            };
+            blocks = new blocksets
+            {
+                X = 14,
+                Y = 350,
+                width = 50,
+                height = 20,
+                color = Colors.Red
+            };
+            userPaddle = new Rectangle
+            {
+                X = 400,
+                Y = 750,
+                width = 50,
+                Height = 10,
+                color = Colors.Blue
+            };
+            userPaddle2 = new Rectangle
+            {
+                X = 20,
+                Y = 350,
+                width = 50,
+                Height = 10,
+                color = Colors.Blue
+            };
+
+        }
+        public void DrawPong(CanvasDrawingSession drawingSession)
+        {
+
+            leftWall.Draw(drawingSession);
+            rightWall.Draw(drawingSession);
+            topWall.Draw(drawingSession);
+            userPaddle.Draw(drawingSession); ball.Draw(drawingSession);
+             userPaddle2.Draw(drawingSession);
+            //    int c = 1;
+            //    for (int j = 350; j < 480 + blocks.height;)
+            //    {
+            //        for (int x = leftWall.X + leftWall.width + 3; x < rightWall.X - blocks.width; x = blocks.width + x + 5)
+            //        {
+
+            //            blocks.X = x;
+            //            blocks.Y = j;
+            //            blocks.width = 50;
+            //            blocks.height = 20;
+            //            if (c == 1) blocks.color = Colors.Red;
+            //            if (c == 2) blocks.color = Colors.Orange;
+            //            if (c == 3) blocks.color = Colors.Yellow;
+            //            if (c == 4) blocks.color = Colors.YellowGreen;
+            //            if (c == 5) blocks.color = Colors.Green;
+            //            blocks.Draw(drawingSession);
+            //            blockset.SetValue(blocks,x, j);
+            //        }
+            //        j = (c * blocks.height) + 350 + (c * 6);
+            //        c++;
+            //    }
+
+            //    ball.Draw(drawingSession);
+        }
+        public void setUPM_L(bool M_L)
+        {
+            IsUPM_L = M_L;
+        }
+        public void setUPM_R(bool M_R)
+        {
+            IsUPM_R = M_R;
+        }
+
+        internal void Update()
+        {
+            if (!gameOver)
+            {
+                if (IsUPM_L)
+                {
+                    if (userPaddle.X > leftWall.X + leftWall.width)
+                    {
+                        moveUSerPaddle(-1);
+                    }
+                }
+                if (IsUPM_R)
+                {
+                    if (userPaddle.X + userPaddle.width < rightWall.X)
+                    {
+                        moveUSerPaddle(1);
+                    }
+                }
+
+                if (ball.X - ball.Radius <= leftWall.X + leftWall.width && ball.Y + ball.Radius >= leftWall.Y && ball.Y + ball.Radius <= leftWall.Y + leftWall.Height)
+                {
+                    ball.M_L = false;
+                    ball.ChangeColor();
+                }
+                else if (ball.X + ball.Radius >= rightWall.X && ball.Y + ball.Radius >= rightWall.Y && ball.Y + ball.Radius <= rightWall.Y + rightWall.Height)
+                {
+                    ball.M_L = true;
+                    ball.ChangeColor();
+                }
+                else if (ball.X + ball.Radius >= topWall.X && ball.Y + ball.Radius >= topWall.Y && ball.Y + ball.Radius <= topWall.Y + topWall.Height)
+                {
+                    ball.M_D = true;
+                    ball.ChangeColor();
+                }
+                else if (ball.Y + ball.Radius >= userPaddle.Y && ball.X - ball.Radius >= userPaddle.X && ball.X + ball.Radius <= userPaddle.X + userPaddle.width)
+                {
+                    ball.M_L = false;
+                    ball.M_D = false;
+                    ball.ChangeColor();
+
+                }
+                else if (ball.Y - ball.Radius <= userPaddle.Y + userPaddle2.Height 
+                    && ball.X - ball.Radius >= userPaddle2.X 
+                    && ball.X + ball.Radius <= userPaddle2.X + userPaddle2.width)
+                {
+                    ball.M_L = false;
+                    ball.M_D = true;
+                    ball.ChangeColor();
+                }
+            
+                ball.updatePosition();
+                if (ball.Y > userPaddle.Y)
+                {
+                    gameOver = true;
+                }
+            }
+        }
+
+
+
+        public void moveUSerPaddle(int changeInX)
+        {
+            
+            userPaddle.X += changeInX * 10;
+            
+        }
+    }
+}
