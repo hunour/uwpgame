@@ -17,10 +17,9 @@ namespace breakouts1
         private Rectangle rightWall;
         private Rectangle topWall;
         private Rectangle userPaddle;
-        private Rectangle userPaddle2;
-        private const int NBR = 1000;
-        private const int NBC = 1000;
-        private blocksets[,] blockset = new blocksets[NBR, NBC];
+        private int i = 0;
+        private const int NBR = 71;
+        private blocksets[] blockset = new blocksets[NBR];
 
         public bool gameOver { get; private set; }
         //clean this put it in a class where it belongs
@@ -67,7 +66,7 @@ namespace breakouts1
             };
             blocks = new blocksets
             {
-                X = 14,
+                X = 20,
                 Y = 350,
                 width = 50,
                 height = 20,
@@ -81,14 +80,14 @@ namespace breakouts1
                 Height = 10,
                 color = Colors.Blue
             };
-            userPaddle2 = new Rectangle
-            {
-                X = 20,
-                Y = 350,
-                width = 50,
-                Height = 10,
-                color = Colors.Blue
-            };
+            //userPaddle2 = new Rectangle
+            //{
+            //    X = 20,
+            //    Y = 500,
+            //    width = 50,
+            //    Height = 10,
+            //    color = Colors.Blue
+            //};
 
         }
         public void DrawPong(CanvasDrawingSession drawingSession)
@@ -98,30 +97,42 @@ namespace breakouts1
             rightWall.Draw(drawingSession);
             topWall.Draw(drawingSession);
             userPaddle.Draw(drawingSession); ball.Draw(drawingSession);
-             userPaddle2.Draw(drawingSession);
-            //    int c = 1;
-            //    for (int j = 350; j < 480 + blocks.height;)
-            //    {
-            //        for (int x = leftWall.X + leftWall.width + 3; x < rightWall.X - blocks.width; x = blocks.width + x + 5)
-            //        {
+            //userPaddle2.Draw(drawingSession);
+            int c = 1;
+            while (i < 70)
+            {
+                for (int j = 350; j < 460 + blocks.height;)
+                {
+                    for (int x = leftWall.X + leftWall.width + 3; x < rightWall.X - blocks.width; x = blocks.width + x + 5)
+                    {
 
-            //            blocks.X = x;
-            //            blocks.Y = j;
-            //            blocks.width = 50;
-            //            blocks.height = 20;
-            //            if (c == 1) blocks.color = Colors.Red;
-            //            if (c == 2) blocks.color = Colors.Orange;
-            //            if (c == 3) blocks.color = Colors.Yellow;
-            //            if (c == 4) blocks.color = Colors.YellowGreen;
-            //            if (c == 5) blocks.color = Colors.Green;
-            //            blocks.Draw(drawingSession);
-            //            blockset.SetValue(blocks,x, j);
-            //        }
-            //        j = (c * blocks.height) + 350 + (c * 6);
-            //        c++;
-            //    }
+                        blocks = new blocksets();
+                        blocks.X = x;
+                        blocks.Y = j;
+                        blocks.width = 50;
+                        blocks.height = 20;
+                        if (c == 1) blocks.color = Colors.Red;
+                        if (c == 2) blocks.color = Colors.Orange;
+                        if (c == 3) blocks.color = Colors.Yellow;
+                        if (c == 4) blocks.color = Colors.YellowGreen;
+                        if (c == 5) blocks.color = Colors.Green;
+                        
+                        blockset.SetValue(blocks, i); i++;
 
-            //    ball.Draw(drawingSession);
+                    }
+                    j = (c * blocks.height) + 350 + (c * 6);
+                    c++;
+                    if (c == 6)
+                    {
+
+                    }
+                }
+            }
+            for (i = 0; i < 70; i++)
+            {
+                blockset[i].Draw(drawingSession);
+            }
+            ball.Draw(drawingSession);
         }
         public void setUPM_L(bool M_L)
         {
@@ -153,6 +164,7 @@ namespace breakouts1
 
                 if (ball.X - ball.Radius <= leftWall.X + leftWall.width && ball.Y + ball.Radius >= leftWall.Y && ball.Y + ball.Radius <= leftWall.Y + leftWall.Height)
                 {
+
                     ball.M_L = false;
                     ball.ChangeColor();
                 }
@@ -168,20 +180,44 @@ namespace breakouts1
                 }
                 else if (ball.Y + ball.Radius >= userPaddle.Y && ball.X - ball.Radius >= userPaddle.X && ball.X + ball.Radius <= userPaddle.X + userPaddle.width)
                 {
-                    ball.M_L = false;
-                    ball.M_D = false;
-                    ball.ChangeColor();
+                    if (ball.M_D && ball.M_L)
+                    {
+                        ball.M_L = true;
+                        ball.M_D = false;
+                        ball.ChangeColor();
+                    }
+                    else
+                    {
+                        ball.M_L = false;
+                        ball.M_D = false;
+                        ball.ChangeColor();
+                    }
 
                 }
-                else if (ball.Y - ball.Radius <= userPaddle.Y + userPaddle2.Height 
-                    && ball.X - ball.Radius >= userPaddle2.X 
-                    && ball.X + ball.Radius <= userPaddle2.X + userPaddle2.width)
+                else
                 {
-                    ball.M_L = false;
-                    ball.M_D = true;
-                    ball.ChangeColor();
+                    for (int i = 0; i < i; i++)
+                    {
+                        if (ball.Y - ball.Radius <= blockset[i].Y + blockset[i].height
+                            && ball.Y + ball.Radius >= blockset[i].Y - blockset[i].height
+                            && ball.X - ball.Radius >= blockset[i].X
+                            && ball.X + ball.Radius <= blockset[i].X + blockset[i].width)
+                        {
+                            if (ball.Y - ball.Radius <= blockset[i].Y + blockset[i].height)
+                            {
+                                ball.M_L = true;
+                                ball.M_D = false;
+                                ball.ChangeColor();
+                            }
+                            else if (ball.Y + ball.Radius >= blockset[i].Y - blockset[i].height)
+                            {
+                                ball.M_L = false;
+                                ball.M_D = true;
+                                ball.ChangeColor();
+                            }
+                        }
+                    }
                 }
-            
                 ball.updatePosition();
                 if (ball.Y > userPaddle.Y)
                 {

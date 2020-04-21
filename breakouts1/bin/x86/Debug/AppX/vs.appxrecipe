@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-21T00:35:27.832</Modified>
+      <Modified>2020-04-21T04:02:35.460</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\bin\x86\Debug\breakouts1.exe">
       <PackagePath>entrypoint\breakouts1.exe</PackagePath>
-      <Modified>2020-04-21T00:35:27.262</Modified>
+      <Modified>2020-04-21T04:02:34.839</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -98,11 +98,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-04-21T00:35:27.063</Modified>
+      <Modified>2020-04-21T02:22:48.748</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-04-21T00:35:27.063</Modified>
+      <Modified>2020-04-21T02:22:48.748</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -114,7 +114,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\bin\x86\Debug\Core\breakouts1.exe">
       <PackagePath>breakouts1.exe</PackagePath>
-      <Modified>2020-04-21T00:35:27.822</Modified>
+      <Modified>2020-04-21T04:02:35.452</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
