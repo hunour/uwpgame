@@ -34,7 +34,10 @@ namespace breakouts1
 
             Window.Current.CoreWindow.KeyDown += Canvas_KeyDown;
             Window.Current.CoreWindow.KeyUp += Canvas_KeyUp;
+        
         }
+
+        
 
         private void Canvas_KeyUp(CoreWindow sender, KeyEventArgs args)
         {
