@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-2S27LII</Machine>
-    <WindowsUser>husse</WindowsUser>
+    <Machine>LAPTOP-DBJT4PF2</Machine>
+    <WindowsUser>1haid</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,82 +10,85 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>edfaf364-0e94-4c87-81cf-445d4bdc7e09</PackageIdentityName>
     <PackageIdentityPublisher>CN=husse</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\bin\x86\Debug\breakouts1.exe">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\bin\x86\Debug\breakouts1.exe">
       <PackagePath>entrypoint\breakouts1.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\.nuget\packages\win2d.uwp\1.25.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
+    <AppxPackagedFile Include="C:\Users\1haid\.nuget\packages\win2d.uwp\1.25.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\.nuget\packages\win2d.uwp\1.25.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+    <AppxPackagedFile Include="C:\Users\1haid\.nuget\packages\win2d.uwp\1.25.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\bin\x86\Debug\breakouts1.xr.xml">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\bin\x86\Debug\breakouts1.xr.xml">
       <PackagePath>breakouts1.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\bin\x86\Debug\title.xbf">
+      <PackagePath>title.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\bin\x86\Debug\Core\breakouts1.exe">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\hunour\uwpgame\breakouts1\bin\x86\Debug\Core\breakouts1.exe">
       <PackagePath>breakouts1.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

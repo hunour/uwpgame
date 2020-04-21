@@ -8316,28 +8316,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\husse\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\1haid\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\husse\\Documents\\GitHub\\uwpgame\\breakouts1\\breakouts1.csproj",
+      "projectUniqueName": "C:\\Users\\1haid\\OneDrive\\Documents\\GitHub\\CIS297-Winter2020-Texas_Holdem\\hunour\\uwpgame\\breakouts1\\breakouts1.csproj",
       "projectName": "breakouts1",
-      "projectPath": "C:\\Users\\husse\\Documents\\GitHub\\uwpgame\\breakouts1\\breakouts1.csproj",
-      "packagesPath": "C:\\Users\\husse\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\husse\\Documents\\GitHub\\uwpgame\\breakouts1\\obj\\",
+      "projectPath": "C:\\Users\\1haid\\OneDrive\\Documents\\GitHub\\CIS297-Winter2020-Texas_Holdem\\hunour\\uwpgame\\breakouts1\\breakouts1.csproj",
+      "packagesPath": "C:\\Users\\1haid\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\1haid\\OneDrive\\Documents\\GitHub\\CIS297-Winter2020-Texas_Holdem\\hunour\\uwpgame\\breakouts1\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\husse\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\1haid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "uap10.0.17763"
