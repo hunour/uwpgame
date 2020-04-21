@@ -43,6 +43,7 @@ namespace breakouts1
         {
             Random random = new Random();
             color = Color.FromArgb(255, (byte)random.Next(256), (byte)random.Next(256), (byte)random.Next(256));
+            
         }
     }
 }

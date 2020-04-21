@@ -17,6 +17,7 @@ namespace breakouts1
         private Rectangle rightWall;
         private Rectangle topWall;
         private Rectangle userPaddle;
+        public int life = 3;
         private int i = 0;
         private const int NBR = 71;
         private blocksets[] blockset = new blocksets[NBR];
@@ -130,7 +131,10 @@ namespace breakouts1
             }
             for (i = 0; i < 70; i++)
             {
-                blockset[i].Draw(drawingSession);
+                if (blockset[i] != null)
+                {
+                    blockset[i].Draw(drawingSession);
+                }
             }
             ball.Draw(drawingSession);
         }
@@ -173,7 +177,7 @@ namespace breakouts1
                     ball.M_L = true;
                     ball.ChangeColor();
                 }
-                else if (ball.X + ball.Radius >= topWall.X && ball.Y + ball.Radius >= topWall.Y && ball.Y + ball.Radius <= topWall.Y + topWall.Height)
+                else if (ball.X + ball.Radius >= topWall.X && ball.Y + ball.Radius >= topWall.Y && ball.Y + ball.Radius <= topWall.Y - topWall.Height)
                 {
                     ball.M_D = true;
                     ball.ChangeColor();
@@ -196,24 +200,89 @@ namespace breakouts1
                 }
                 else
                 {
-                    for (int i = 0; i < i; i++)
+
+                    for (int j = 0; j < i; j++)
                     {
-                        if (ball.Y - ball.Radius <= blockset[i].Y + blockset[i].height
-                            && ball.Y + ball.Radius >= blockset[i].Y - blockset[i].height
-                            && ball.X - ball.Radius >= blockset[i].X
-                            && ball.X + ball.Radius <= blockset[i].X + blockset[i].width)
+                        if (blockset[j] != null)
                         {
-                            if (ball.Y - ball.Radius <= blockset[i].Y + blockset[i].height)
+                            if (ball.Y - ball.Radius <= blockset[j].Y + blockset[j].height
+                                && ball.Y + ball.Radius >= blockset[j].Y - blockset[j].height
+                                && ball.X - ball.Radius >= blockset[j].X
+                                && ball.X + ball.Radius <= blockset[j].X + blockset[j].width)
                             {
-                                ball.M_L = true;
-                                ball.M_D = false;
-                                ball.ChangeColor();
-                            }
-                            else if (ball.Y + ball.Radius >= blockset[i].Y - blockset[i].height)
-                            {
-                                ball.M_L = false;
-                                ball.M_D = true;
-                                ball.ChangeColor();
+                                if (ball.Y - ball.Radius <= blockset[j].Y + blockset[j].height)
+                                {
+                                    if(ball.M_D==false&& ball.M_L == true)
+                                    {
+                                        ball.M_L = true;
+                                        ball.M_D = true;
+                                    }
+                                    else if (ball.M_D == false && ball.M_L == false)
+                                    {
+                                        ball.M_L = false;
+                                        ball.M_D = true;
+                                    }
+                                    
+                                    ball.ChangeColor();
+                                    if (blockset[j].color == Colors.Red)
+                                    {
+                                        ball.ballSpeed = 5;
+                                    }
+                                    if (blockset[j].color == Colors.Orange && ball.ballSpeed < 4)
+                                    {
+                                        ball.ballSpeed = 4;
+                                    }
+                                    if (blockset[j].color == Colors.Yellow && ball.ballSpeed < 3)
+                                    {
+                                        ball.ballSpeed = 3;
+                                    }
+                                    if (blockset[j].color == Colors.YellowGreen && ball.ballSpeed < 2)
+                                    {
+                                        ball.ballSpeed = 2;
+                                    }
+                                    if (blockset[j].color == Colors.Green && ball.ballSpeed < 2)
+                                    {
+                                        ball.ballSpeed = 2;
+                                    }
+                                    blockset[j].color = Colors.Black;
+                                    blockset[j] = null;
+                                }
+                                else if (ball.Y + ball.Radius >= blockset[j].Y - blockset[j].height)
+                                {
+                                     if (ball.M_D == true && ball.M_L == false)
+                                    {
+                                        ball.M_L = true;
+                                        ball.M_D = false;
+                                    }
+                                    else if (ball.M_D == true && ball.M_L == true)
+                                    {
+                                        ball.M_L = false;
+                                        ball.M_D = false;
+                                    }
+                                    ball.ChangeColor();
+                                    if (blockset[j].color == Colors.Red)
+                                    {
+                                        ball.ballSpeed = 5;
+                                    }
+                                    if (blockset[j].color == Colors.Orange&& ball.ballSpeed < 4)
+                                    {
+                                        ball.ballSpeed = 4;
+                                    }
+                                    if (blockset[j].color == Colors.Yellow && ball.ballSpeed <3 )
+                                    {
+                                        ball.ballSpeed = 3;
+                                    }
+                                    if (blockset[j].color == Colors.YellowGreen && ball.ballSpeed < 2)
+                                    {
+                                        ball.ballSpeed = 2;
+                                    }
+                                    if (blockset[j].color == Colors.Green && ball.ballSpeed < 2)
+                                    {
+                                        ball.ballSpeed = 2;
+                                    }
+                                    blockset[j].color = Colors.Black;
+                                    blockset[j] = null;
+                                }
                             }
                         }
                     }
@@ -221,7 +290,14 @@ namespace breakouts1
                 ball.updatePosition();
                 if (ball.Y > userPaddle.Y)
                 {
-                    gameOver = true;
+                    if (life > 0)
+                    {
+                        life--;
+                    }
+                    else
+                    {
+                        gameOver = true;
+                    }
                 }
             }
         }

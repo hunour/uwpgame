@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\husse\\Desktop\\Capital Control\\school\\sem winter 2020\\cis 297\\breakouts1\\breakouts1.csproj": {}
+    "C:\\Users\\husse\\Documents\\GitHub\\uwpgame\\breakouts1\\breakouts1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\husse\\Desktop\\Capital Control\\school\\sem winter 2020\\cis 297\\breakouts1\\breakouts1.csproj": {
+    "C:\\Users\\husse\\Documents\\GitHub\\uwpgame\\breakouts1\\breakouts1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\husse\\Desktop\\Capital Control\\school\\sem winter 2020\\cis 297\\breakouts1\\breakouts1.csproj",
+        "projectUniqueName": "C:\\Users\\husse\\Documents\\GitHub\\uwpgame\\breakouts1\\breakouts1.csproj",
         "projectName": "breakouts1",
-        "projectPath": "C:\\Users\\husse\\Desktop\\Capital Control\\school\\sem winter 2020\\cis 297\\breakouts1\\breakouts1.csproj",
+        "projectPath": "C:\\Users\\husse\\Documents\\GitHub\\uwpgame\\breakouts1\\breakouts1.csproj",
         "packagesPath": "C:\\Users\\husse\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\husse\\Desktop\\Capital Control\\school\\sem winter 2020\\cis 297\\breakouts1\\obj\\",
+        "outputPath": "C:\\Users\\husse\\Documents\\GitHub\\uwpgame\\breakouts1\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

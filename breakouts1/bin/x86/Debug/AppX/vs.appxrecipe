@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>edfaf364-0e94-4c87-81cf-445d4bdc7e09</PackageIdentityName>
     <PackageIdentityPublisher>CN=husse</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>568F272EBDE893F0114D5A4EF4027A3BA8BB18CF00188CFD28EE462318F9ED72</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>edfaf364-0e94-4c87-81cf-445d4bdc7e09_1.0.0.0_x86__st3ykgcfsrgwr</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>edfaf364-0e94-4c87-81cf-445d4bdc7e09_st3ykgcfsrgwr!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-21T04:02:35.460</Modified>
+      <Modified>2020-04-21T18:29:39.485</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\bin\x86\Debug\breakouts1.exe">
+    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\bin\x86\Debug\breakouts1.exe">
       <PackagePath>entrypoint\breakouts1.exe</PackagePath>
-      <Modified>2020-04-21T04:02:34.839</Modified>
+      <Modified>2020-04-21T18:29:38.537</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -54,67 +54,67 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T23:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2020-04-20T18:46:34.723</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2020-02-07T16:00:05.257</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-02-07T16:00:05.257</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-02-07T16:00:05.257</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-02-07T16:00:05.257</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-02-07T16:00:05.257</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-02-07T16:00:05.257</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-02-07T16:00:05.257</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\bin\x86\Debug\breakouts1.xr.xml">
+    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\bin\x86\Debug\breakouts1.xr.xml">
       <PackagePath>breakouts1.xr.xml</PackagePath>
       <Modified>2020-04-20T19:07:26.178</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-04-21T02:22:48.748</Modified>
+      <Modified>2020-04-21T18:29:38.332</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-04-21T02:22:48.748</Modified>
+      <Modified>2020-04-21T18:29:38.332</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-03-18T22:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <Modified>2020-04-20T19:07:27.234</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\husse\Desktop\Capital Control\school\sem winter 2020\cis 297\breakouts1\bin\x86\Debug\Core\breakouts1.exe">
+    <AppxPackagedFile Include="C:\Users\husse\Documents\GitHub\uwpgame\breakouts1\bin\x86\Debug\Core\breakouts1.exe">
       <PackagePath>breakouts1.exe</PackagePath>
-      <Modified>2020-04-21T04:02:35.452</Modified>
+      <Modified>2020-04-21T18:29:39.476</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

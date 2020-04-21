@@ -25,6 +25,7 @@ namespace breakouts1
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        
         Pong pong;
         public MainPage()
         {
@@ -65,9 +66,9 @@ namespace breakouts1
 
         private void Canvas_Draw(ICanvasAnimatedControl sender, CanvasAnimatedDrawEventArgs args)
         {
-
+           
             pong.DrawPong(args.DrawingSession);
-            if (!pong.gameOver)
+            if (!pong.gameOver&& pong.life>0)
             {
                 pong.DrawPong(args.DrawingSession);
             }
@@ -84,6 +85,7 @@ namespace breakouts1
 
         private void Canvas_Update(ICanvasAnimatedControl sender, CanvasAnimatedUpdateEventArgs args)
         {
+
             pong.Update();
         }
     }
