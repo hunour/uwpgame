@@ -27,6 +27,9 @@ namespace breakouts1
     {
         
         Pong pong;
+        private bool n = false;
+        private bool y = false;
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -67,19 +70,55 @@ namespace breakouts1
             }
         }
 
+        private void Canvas_KeyN(CoreWindow sender, KeyEventArgs args)
+        {
+            if(args.VirtualKey == Windows.System.VirtualKey.N)
+            {
+                n = true;
+            }
+
+            if (args.VirtualKey == Windows.System.VirtualKey.Y)
+            {
+                y = true;
+            }
+
+        }
+
         private void Canvas_Draw(ICanvasAnimatedControl sender, CanvasAnimatedDrawEventArgs args)
         {
            
             pong.DrawPong(args.DrawingSession);
-            if (!pong.gameOver&& pong.life>0)
+
+
+            if (pong.gameOver == false && pong.life > 0)
             {
                 pong.DrawPong(args.DrawingSession);
             }
+
+            if (pong.gameOver == true && pong.life == 0)
+            {
+                args.DrawingSession.DrawText("GAME OVER! do you want to play again? (Y/N)", 400, 400, Colors.Azure);
+
+                if(y == true)
+                {
+                    pong.DrawPong(args.DrawingSession);
+                }
+
+                if(n == true)
+                {
+                    this.Frame.Navigate(typeof(credits));
+                }
+            }
+           
+            /*
             else
             {
                 args.DrawingSession.DrawText("GAME OVER! do you want to play again? (Y/N)", 400, 400, Colors.Azure);
             }
+            */
         }
+
+
 
         private void Canvas_CreateResources(CanvasAnimatedControl sender, Microsoft.Graphics.Canvas.UI.CanvasCreateResourcesEventArgs args)
         {

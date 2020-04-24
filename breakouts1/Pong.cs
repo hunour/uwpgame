@@ -294,7 +294,8 @@ namespace breakouts1
                     {
                         life--;
                     }
-                    else
+                    
+                    if(life == 0)
                     {
                         gameOver = true;
                     }
