@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Margin="0,414,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="45"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,500,0,0" Text="Credits" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="45"/>
 
     </Grid>
 </Page>

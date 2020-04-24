@@ -17,7 +17,7 @@ namespace breakouts1
         private Rectangle rightWall;
         private Rectangle topWall;
         private Rectangle userPaddle;
-        public int life = 3;
+        public int life;
         private int i = 0;
         private const int NBR = 71;
         private blocksets[] blockset = new blocksets[NBR];
@@ -177,7 +177,7 @@ namespace breakouts1
                     ball.M_L = true;
                     ball.ChangeColor();
                 }
-                else if (ball.X + ball.Radius >= topWall.X && ball.Y + ball.Radius >= topWall.Y && ball.Y + ball.Radius <= topWall.Y - topWall.Height)
+                else if (ball.X - ball.Radius >= topWall.X && ball.Y + ball.Radius >= topWall.Y && ball.Y + ball.Radius <= topWall.Y + topWall.Height)
                 {
                     ball.M_D = true;
                     ball.ChangeColor();
@@ -292,13 +292,15 @@ namespace breakouts1
                 {
                     if (life > 0)
                     {
-                        life--;
+                        ball.life--;
+                        life = ball.life;
                     }
-                    
-                    if(life == 0)
+
+                    else
                     {
                         gameOver = true;
                     }
+                  
                 }
             }
         }

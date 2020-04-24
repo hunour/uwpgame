@@ -52,9 +52,15 @@ namespace breakouts1
             {
                 pong.setUPM_R(false);
             }
+
             if (pong.gameOver && args.VirtualKey == Windows.System.VirtualKey.Y)
             {
                 pong = new Pong();
+            }
+
+            if (pong.gameOver && args.VirtualKey == Windows.System.VirtualKey.N)
+            {
+                this.Frame.Navigate(typeof(credits));
             }
         }
 
@@ -70,44 +76,16 @@ namespace breakouts1
             }
         }
 
-        private void Canvas_KeyN(CoreWindow sender, KeyEventArgs args)
-        {
-            if(args.VirtualKey == Windows.System.VirtualKey.N)
-            {
-                n = true;
-            }
 
-            if (args.VirtualKey == Windows.System.VirtualKey.Y)
-            {
-                y = true;
-            }
-
-        }
 
         private void Canvas_Draw(ICanvasAnimatedControl sender, CanvasAnimatedDrawEventArgs args)
         {
            
             pong.DrawPong(args.DrawingSession);
 
-
-            if (pong.gameOver == false && pong.life > 0)
-            {
-                pong.DrawPong(args.DrawingSession);
-            }
-
-            if (pong.gameOver == true && pong.life == 0)
+            if(pong.life <= 0)
             {
                 args.DrawingSession.DrawText("GAME OVER! do you want to play again? (Y/N)", 400, 400, Colors.Azure);
-
-                if(y == true)
-                {
-                    pong.DrawPong(args.DrawingSession);
-                }
-
-                if(n == true)
-                {
-                    this.Frame.Navigate(typeof(credits));
-                }
             }
            
             /*

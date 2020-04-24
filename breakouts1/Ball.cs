@@ -11,7 +11,7 @@ namespace breakouts1
 
         public int X { get; set; }
         public int Y { get; set; }
-
+        public int life = 3;
         public int Radius { get; set; }
         public Color color { get; set; }
         public int ballSpeed { get; set; }
