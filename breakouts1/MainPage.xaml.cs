@@ -95,7 +95,7 @@ namespace breakouts1
 
             if (pong.gameOver == true)
             {
-                args.DrawingSession.DrawText("GAME OVER! do you want to play again? (Y/N)", 400, 400, Colors.DeepPink);
+                args.DrawingSession.DrawText("GAME OVER! do you want to play again? (Y/N)", 200, 200, Colors.DeepPink);
             }
             /*
             else
