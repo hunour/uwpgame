@@ -5,19 +5,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Media.Core;
 using Windows.UI;
 
 namespace breakouts1
 {
     public class Pong
     {
+        image pict;
         private blocksets blocks;
         private Ball ball;
         private Rectangle leftWall;
         private Rectangle rightWall;
         private Rectangle topWall;
         private Rectangle userPaddle;
-        public int life;
         private int i = 0;
         private const int NBR = 71;
         private blocksets[] blockset = new blocksets[NBR];
@@ -28,6 +29,12 @@ namespace breakouts1
         private bool IsUPM_R;
         public Pong()
         {
+            pict = new image
+            {
+                X = 900,
+                Y = 300;
+            };
+
             gameOver = false;
             ball = new Ball
             {
@@ -91,9 +98,15 @@ namespace breakouts1
             //};
 
         }
+
+        public void SetPicture(CanvasBitmap pic)
+        {
+            pict.picture = pic;
+        }
+
         public void DrawPong(CanvasDrawingSession drawingSession)
         {
-
+            pict.Draw(drawingSession);
             leftWall.Draw(drawingSession);
             rightWall.Draw(drawingSession);
             topWall.Draw(drawingSession);
@@ -290,17 +303,10 @@ namespace breakouts1
                 ball.updatePosition();
                 if (ball.Y > userPaddle.Y)
                 {
-                    if (life > 0)
-                    {
-                        ball.life--;
-                        life = ball.life;
-                    }
-
-                    else
-                    {
-                        gameOver = true;
-                    }
-                  
+                    gameOver = true;
+                    App.soundPlayer.Source = MediaSource.CreateFromUri(
+                        new Uri($"ms-appx:///Assets/sound.mp3"));
+                    App.soundPlayer.Play();
                 }
             }
         }

@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Microsoft.Graphics.Canvas;
+using Microsoft.Graphics.Canvas.UI.Xaml;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -24,9 +27,12 @@ namespace breakouts1
     //THIS IS THE TITLE PAGE
     public sealed partial class title : Page
     {
+
+      
         public title()
         {
             this.InitializeComponent();
+           
         }
 
 

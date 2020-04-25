@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>edfaf364-0e94-4c87-81cf-445d4bdc7e09</PackageIdentityName>
     <PackageIdentityPublisher>CN=husse</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\bin\x86\Debug\breakouts1.exe">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\bin\x86\Debug\breakouts1.exe">
       <PackagePath>entrypoint\breakouts1.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
@@ -40,58 +40,64 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\Assets\breakout.PNG">
+      <PackagePath>Assets\breakout.PNG</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\bin\x86\Debug\breakouts1.xr.xml">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\Assets\sound.mp3">
+      <PackagePath>Assets\sound.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\bin\x86\Debug\breakouts1.xr.xml">
       <PackagePath>breakouts1.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\bin\x86\Debug\credits.xbf">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\bin\x86\Debug\credits.xbf">
       <PackagePath>credits.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\bin\x86\Debug\title.xbf">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\bin\x86\Debug\title.xbf">
       <PackagePath>title.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame2\breakouts1\bin\x86\Debug\Core\breakouts1.exe">
+    <AppxPackagedFile Include="C:\Users\1haid\OneDrive\Documents\GitHub\CIS297-Winter2020-Texas_Holdem\uwpgame3\breakouts1\bin\x86\Debug\Core\breakouts1.exe">
       <PackagePath>breakouts1.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

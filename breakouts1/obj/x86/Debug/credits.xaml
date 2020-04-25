@@ -9,7 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Margin="0,500,0,0" Text="Credits" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="45"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,140,0,0" Text="Credits" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="45"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,236,0,0" Text="Hussein Noureddine" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="35"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,322,0,0" Text="Muhammad Ali Haidar" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="35"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,405,0,0" Text="Chad Hamdan" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="35"/>
 
     </Grid>
 </Page>

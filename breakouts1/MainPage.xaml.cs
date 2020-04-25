@@ -15,6 +15,8 @@ using Windows.UI.Xaml.Navigation;
 using Microsoft.Graphics.Canvas.UI.Xaml;
 using Windows.UI;
 using Windows.UI.Core;
+using Microsoft.Graphics.Canvas;
+using System.Threading.Tasks;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -27,8 +29,7 @@ namespace breakouts1
     {
         
         Pong pong;
-        private bool n = false;
-        private bool y = false;
+        CanvasBitmap picture;
 
         public MainPage()
         {
@@ -83,11 +84,16 @@ namespace breakouts1
            
             pong.DrawPong(args.DrawingSession);
 
-            if(pong.life <= 0)
+            if(!pong.gameOver)
             {
-                args.DrawingSession.DrawText("GAME OVER! do you want to play again? (Y/N)", 400, 400, Colors.Azure);
+
+                pong.DrawPong(args.DrawingSession);
             }
-           
+
+            if (pong.gameOver == true)
+            {
+                args.DrawingSession.DrawText("GAME OVER! do you want to play again? (Y/N)", 400, 400, Colors.DeepPink);
+            }
             /*
             else
             {
@@ -100,7 +106,13 @@ namespace breakouts1
 
         private void Canvas_CreateResources(CanvasAnimatedControl sender, Microsoft.Graphics.Canvas.UI.CanvasCreateResourcesEventArgs args)
         {
+            args.TrackAsyncAction(CreateResources(sender).AsAsyncAction());
+        }
 
+        async Task CreateResources(Microsoft.Graphics.Canvas.UI.Xaml.CanvasAnimatedControl sender)
+        {
+            picture = await CanvasBitmap.LoadAsync(sender, "Assets/breakout.PNG");
+            pong.SetPicture(picture);
         }
 
         private void Canvas_Update(ICanvasAnimatedControl sender, CanvasAnimatedUpdateEventArgs args)

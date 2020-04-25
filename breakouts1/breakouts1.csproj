@@ -121,6 +121,10 @@
     </Compile>
     <Compile Include="Ball.cs" />
     <Compile Include="blocksets.cs" />
+    <Compile Include="credits.xaml.cs">
+      <DependentUpon>credits.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="image.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -135,6 +139,8 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\breakout.PNG" />
+    <Content Include="Assets\sound.mp3" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
