@@ -31,8 +31,8 @@ namespace breakouts1
         {
             pict = new Picture
             {
-                X = 10,
-                Y = 60
+                X = 900,
+                Y = 300
             };
 
             gameOver = false;

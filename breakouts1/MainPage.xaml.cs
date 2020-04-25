@@ -56,7 +56,10 @@ namespace breakouts1
 
             if (pong.gameOver && args.VirtualKey == Windows.System.VirtualKey.Y)
             {
+               
                 pong = new Pong();
+                pong.SetPicture(picture);
+
             }
 
             if (pong.gameOver && args.VirtualKey == Windows.System.VirtualKey.N)
