@@ -84,7 +84,7 @@ namespace breakouts1
             {
                 X = 400,
                 Y = 750,
-                width = 50,
+                width = 70,
                 Height = 10,
                 color = Colors.Blue
             };
