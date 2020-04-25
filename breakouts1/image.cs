@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace breakouts1
 {
-    class image
+    class Picture
     {
 
         public CanvasBitmap picture;

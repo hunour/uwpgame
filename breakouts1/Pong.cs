@@ -12,7 +12,7 @@ namespace breakouts1
 {
     public class Pong
     {
-        image pict;
+        Picture pict;
         private blocksets blocks;
         private Ball ball;
         private Rectangle leftWall;
@@ -29,10 +29,10 @@ namespace breakouts1
         private bool IsUPM_R;
         public Pong()
         {
-            pict = new image
+            pict = new Picture
             {
-                X = 900,
-                Y = 300;
+                X = 10,
+                Y = 60
             };
 
             gameOver = false;
